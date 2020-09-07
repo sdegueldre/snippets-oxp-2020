@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cart_products" name="Products in Cart">
+    <section class="s_cart_products pt24 pb24">
+        <div class="container">
+            <h3 class="text-center mb32">Products in your Cart</h3>
+        </div>
+    </section>
+</template>
+
+</odoo>
