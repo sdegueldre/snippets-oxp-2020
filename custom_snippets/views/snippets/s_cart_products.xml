@@ -2,11 +2,31 @@
 <odoo>
 
 <template id="s_cart_products" name="Products in Cart">
-    <section class="s_cart_products pt24 pb24">
+    <section class="s_cart_products pt24 pb24" data-number-of-elements="3" data-number-of-elements-small-devices="1">
         <div class="container">
             <h3 class="text-center mb32">Products in your Cart</h3>
+            <div class="dynamic_snippet_template o_not_editable"/>
         </div>
     </section>
+</template>
+
+<template id="s_cart_products_card" name="Header Image Footer Card">
+    <t t-foreach="products" t-as="product">
+        <div class="card h-100" t-att-data-url="product['website_url']">
+            <h5 class="card-header" t-esc="product['display_name']"/>
+            <div class="card-body">
+                <img class="card-img-top p-3" loading="lazy" t-att-src="product['image']"/>
+                <div class="card-text">
+                    <t t-esc="product['description_sale']"/>
+                </div>
+            </div>
+            <div class="card-footer d-flex align-items-center">
+                <div class="card-text">
+                    <t t-raw="product['list_price']"/>
+                </div>
+            </div>
+        </div>
+    </t>
 </template>
 
 </odoo>
