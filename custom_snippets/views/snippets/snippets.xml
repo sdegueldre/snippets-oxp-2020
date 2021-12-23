@@ -27,7 +27,7 @@
         <t t-snippet="custom_snippets.s_cart_products" t-thumbnail="/website_sale/static/src/img/snippets_thumbs/s_products_recently_viewed.svg"/>
     </xpath>
 </template>
-
+<!-- 
 <template id="assets_snippet_s_cart_products_js_000" inherit_id="website.assets_frontend">
     <xpath expr="//script[last()]" position="after">
         <script type="text/javascript" src="/custom_snippets/static/src/snippets/s_cart_products/000.js"/>
@@ -39,5 +39,6 @@
         <script type="text/javascript" src="/custom_snippets/static/src/snippets/s_cart_products/options.js"/>
     </xpath>
 </template>
+-->
 
 </odoo>
